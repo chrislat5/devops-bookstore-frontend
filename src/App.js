@@ -15,10 +15,8 @@ function App() {
       const result = await axios(
         `${process.env.REACT_APP_BOOKS_API_ENDPOINT}/books`,
       );
- 
       setData(result.data);
     };
- 
     fetchData();
   }, []);
 
